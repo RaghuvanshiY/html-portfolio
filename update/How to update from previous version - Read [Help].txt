@@ -1,0 +1,44 @@
+-----------------------------------------------------------------------
+	Taskhub - Your Project Management Tools - Auto Update Help
+-----------------------------------------------------------------------
+
+If you are an existing customer and you have already got the Taskhub running on your server.
+Now when there is an update arrived from our end, you can easily update your system from old version to newer version just by following these simple steps explained below :
+
+Step 1 : Download the Taskhub package from code canyon from your downloads section.
+
+Step 2 : Extract and Find the "update" folder from the downloaded package.
+	You will see content of the package something like this
+		/code - vX.X
+		/documentation
+		/update		<-- Only Take this folder and upload it on your server
+		taskhub.sql
+
+Step 3 : Zip or Compress the "update" folder and upload on your server's existing folder at the following location as shown below :
+		/application
+		/assets
+		/system
+		/update.zip 	<-- It should be uploaded here at this level with other folders shown here
+		.htaccess
+		firebase-messaging-sw
+		index.php
+Step 4 : Now Extract the update.zip folder in the same location and finally it should look something like this.
+		/application
+		/assets
+		/system
+		/update.zip 	<-- Recently uploaded update folders 
+		/update			<-- update folder after extraction
+		.htaccess
+		firebase-messaging-sw
+		index.php
+		
+Step 5 : Login to your Taskhub panel with Admin credentials and navigate to your 
+		http://taskhub.com/updater/ page 
+		
+		and 
+		
+Step 6 : Click on Update now button and Reload the page and your are done. You are now having your updated panel to the latest version.
+
+[ Note : 
+	These steps are to be followed only when you already have the panel and it is in working condition to the previous verion. You should not follow the Auto Update / Update manually in case if you have done any kind of customisation work on this. 
+]
